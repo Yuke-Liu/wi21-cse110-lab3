@@ -117,8 +117,146 @@
             </section>
         </main>
 
+        <canvas width="300" height="300">
+            An alternative text describing what your canvas displays.
+        </canvas>
+
+        <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg> 
+
+        <form>
+            <fieldset>
+                <legend>Tell me about yourself</legend>
+                <div>
+                    <label>What is your name: </label>
+                    <input type="text" name="name" >
+                </div>
+                <div>
+                    <label>What is your email: </label>
+                    <input type="email" >
+                </div>
+                <div>
+                    <label>When is your birth day?</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label>What is your phone number?</label>
+                    <input type="tel">
+                </div>
+                <div>
+                    <label>URL to your main page?</label>
+                    <input type="url" >
+                </div>
+                <div>
+                    <label>What is your favorite color?</label>
+                    <input type="color">
+                </div>
+                <div>
+                    <label>Coffee?</label>
+                    <input type="checkbox">
+                </div>
+
+                <div>
+                    <label>What is your favorite dinorsour?</label>
+                    <select>
+                        <optgroup label="Theropods">
+                            <option>Tyrannosaurus</option>
+                            <option>Velociraptor</option>
+                            <option>Deinonychus</option>
+                        </optgroup>
+                        <optgroup label="Sauropods">
+                            <option>Diplodocus</option>
+                            <option>Saltasaurus</option>
+                            <option>Apatosaurus</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+                <div>
+                    <label>Did I get an A+ on this assignment?</label>
+                    <br>
+                    <input type="radio" id="kraken" name="monster" required>
+                    <label for="kraken">Yes</label><br/>
+                
+                    <input type="radio" id="sasquatch" name="monster">
+                    <label for="sasquatch">Yes</label><br/>
+                
+                    <input type="radio" id="mothman" name="monster">
+                    <label for="mothman">Yes</label>
+                </div>
+        
+                <div>
+                    <label for="ice-cream-choice">What is your favorite flavor of ice cream?</label>
+                    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                    <datalist id="ice-cream-flavors">
+                        <option value="Chocolate">
+                        <option value="Coconut">
+                        <option value="Mint">
+                        <option value="Strawberry">
+                        <option value="Vanilla">
+                    </datalist>
+                </div>
+
+                <div>
+                    <input type="submit" value="submit"> <input type="reset" value="reset">
+                </div>
+            </fieldset>
+        </form>
+
+        <br>
+        <table>
+            <caption>Truth table of AND</caption>
+            <colgroup>
+                <col>
+                <col span="1" class="batman">
+                <col span="1" class="batman">
+            </colgroup>
+            <tr>
+                <td> </td>
+                <th scope="col">1</th>
+                <th scope="col">0</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th scope="row">0</th>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+        
+        <template>
+            <pre>
+┈┈┈╭━━━━━╮┈┈┈┈┈
+┈┈┈┃┊┊┊┊┊┃┈┈┈┈┈
+┈┈┈┃┊┊╭━╮┻╮┈┈┈┈
+┈┈┈╱╲┊┃▋┃▋┃┈┈┈┈
+┈┈╭┻┊┊╰━┻━╮┈┈┈┈
+┈┈╰┳┊╭━━━┳╯┈┈┈┈
+┈┈┈┃┊┃╰━━┫┈HOMER
+┈┈┈┈┈┈┏━┓┈┈┈┈┈┈
+            </pre>
+        </template>
+
+        <details>
+            <summary>Final words</summary>
+            This lab took a long time XD
+
+        </details>
+
+        <button class="favorite styled"
+                type="button">
+            Like and Subscribe!
+        </button>
+        <br>
+        <br>
+
         <footer>
-            <em>IMPORTANT:</em> This is created by Yuke Liu
+            <em>IMPORTANT:</em> This is created by Yuke Liu. This page is a static page, it does not post anything.
         </footer>
     </body>
 </html>
