@@ -7,10 +7,14 @@
         <link href="main.css" rel="stylesheet">
         <title>Yuke's main page</title>
         <style>
-            *{
+            footer
+            {
                 color:black;
+            }
+            *{
                 text-align: left;
                 text-decoration:none;
+                background-color: #FFF;
             }
         </style>
     </head>
@@ -32,16 +36,20 @@
 
         <main>
             <section>
-                <h1><span>About Me:</span></h1>
+                <h1><span style="color:rgb(0, 0, 0)">About Me:</span></h1>
 
-                <h2>Introduction:</h2>
-                <p>Hello, my name is <b>Yuke Liu</b>. I am currently studying at <strong>UCSD</strong> as a sphemore for Computer Science and engineering.</p>
-                <hr>
+                <div id = "Introduction">
+                    <h2 >Introduction:</h2>
+                    <p>Hello, my name is <b>Yuke Liu</b>. I am currently studying at <strong>UCSD</strong> as a sphemore for Computer Science and engineering.</p>
+                    <hr>
+                </div>
                 
-                <h2>Hobbies:</h2>
-                <p>I like to play video games, watch YouTube videos, listen to musics, and cooking and tasting food. </p>
-                <aside><p>Yeah I'm a weeb</p></aside>
-                <hr>
+                <div id = "Hobbies">
+                    <h2>Hobbies:</h2>
+                    <p>I like to play video games, watch YouTube videos, listen to musics, and cooking and tasting food. </p>
+                    <aside><p>Yeah I'm a weeb</p></aside>
+                    <hr>
+                </div>
                 
                 <h2>Favorite Video Games:</h2>
                 <ol>
@@ -132,7 +140,7 @@
             <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
         </svg> 
 
-        <form>
+        <form id = "form">
             <fieldset>
                 <legend>Tell me about yourself</legend>
                 <div>
