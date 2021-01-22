@@ -36,7 +36,48 @@ a[href]
     text-decoration: underline;
 }
 
+a[href]:hover
+{
+    color: #ff0000;
+}
+
+a[href]:active
+{
+    color: hsl(186,100%,50%);
+}
+
 h1, h2, h3{
     font-family: wierd;
 }
+
+div
+{
+    max-width: 100%;
+    min-width: 25%;
+    padding: 0px 0px 0px 0px;
+    margin: auto;
+}
+
+div#Introduction
+{
+    margin: 0px 0px 0px 0px;
+}
+
+div#Introduction > h2
+{
+    color: hsla(186,100%,0%,1);
+}
+
+div#Introduction + div
+{
+    color:black;
+}
+
+div#Hobbies ~ *
+{
+    color: black;
+}
+
+
+
 
