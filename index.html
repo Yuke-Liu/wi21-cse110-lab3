@@ -7,10 +7,7 @@
         <link href="main.css" rel="stylesheet">
         <title>Yuke's main page</title>
         <style>
-            footer
-            {
-                color:black;
-            }
+            
             *{
                 text-align: left;
                 text-decoration:none;
@@ -51,14 +48,16 @@
                     <hr>
                 </div>
                 
-                <h2>Favorite Video Games:</h2>
-                <ol>
-                    <li>The Elder Scroll: <i>Skyrim</i></li>
-                    <li>Fallout 4</li>
-                    <li>Stellairs</li>
-                    <li>Nier Automata</li>
-                </ol>
-                <hr>
+                <div class = "flex-container">
+                    <h2>Favorite Video Games:</h2>
+                    <ol>
+                        <li>The Elder Scroll: <i>Skyrim</i></li>
+                        <li>Fallout 4</li>
+                        <li>Stellairs</li>
+                        <li>Nier Automata</li>
+                    </ol>
+                    <hr>
+                </div>
 
                 <h2>Favorite Music:</h2>
                 <ul>
@@ -92,42 +91,54 @@
                     <code>}</code>
                 </p>
                 <hr>
-                
+              
                 <h2>Favorite Arts:</h2>
-                <h3>Text Art:</h3>
-                <pre>
+                <div class = "grid-container">
+                    <div class="grid-item">
+                        <h3>Text Art:</h3>
+                        <pre>
 ───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───
 ───█▒▒░░░░░░░░░▒▒█───
 ────█░░█░░░░░█░░█────
 ─▄▄──█░░░▀█▀░░░█──▄▄─
 █░░█─▀▄░░░░░░░▄▀─█░░█                        
-                </pre>
+                        </pre>
+                    </div>
 
-                <h3>Memes:</h3>
-                <picture>
-                    <source srcset="meme.jpg 10000w" sizes = 5000px>
-                    <img src="stellaris.png" alt="stellaris" />
-                </picture>
+                    <div class="grid-item">
+                        <h3>Memes:</h3>
+                        <picture>
+                            <source srcset="meme.jpg 10000w" sizes = 5000px>
+                            <img src="stellaris.png" alt="stellaris" />
+                        </picture>
+                    </div>
 
-                <h3>gif Art:</h3>
-                <figure>
-                    <img src="rubyparrot.gif" alt="some parrot boi">
-                    <figcaption>Some bird boi</figcaption>
-                </figure>
+                    <div class="grid-item">
+                        <h3>gif Art:</h3>
+                        <figure>
+                            <img src="rubyparrot.gif" alt="some parrot boi">
+                            <figcaption>Some bird boi</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                
                 <hr>
 
-                <h2>Videos:</h2>
-                <iframe width="320" height="215"
-                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
-                <br>
-                <video controls width="320" height="215">
+                <div>
+                    <h2>Videos:</h2>
+                    <iframe width="320" height="215"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                    <br>
+                    <video controls width="320" height="215">
 
-                    <source src="Earth.mp4"
-                            type="video/mp4">
-                    <em>Sorry, your browser doesn't support embedded videos.</em>
-                </video>
-                <hr>
+                        <source src="Earth.mp4"
+                                type="video/mp4">
+                        <em>Sorry, your browser doesn't support embedded videos.</em>
+                    </video>
+                    <hr>
+                </div>
+
 
             </section>
         </main>
